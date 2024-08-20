@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home copy 2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main">
+        <aside class="left">
+            <div class="title">Estratégia Simples Tecnologia Tributária</div>
+            <p class="texto-acao">Parte do imposto pago pelas empresas é passível de restituição, nossa empresa faz isso
+                por você.</p>
+            <p class="texto-desc">Faça uma análise gratuita através de nosso formulário, e veja a estimativa de imposto
+                possível de restituir. Essa análise é feita emcima de todo período dos PGDAS inseridos.</p>
+
+            <div>
+                <p>Só aqui, você conta com um profissional altamente capacitado, com mais de R$50.000.000 de reais
+                    recuperados de diversas empresas até o momento</p>
+                <p>Se sua empresa faz parte do SIMPLES NACIONAL, poderá realizar a análise gratuitamente, basta
+                    preencher o formulário com seu nome, seu melhor email, telefone, ramo de atividade de sua empresa,
+                    inserir os arquivos PGDAS de sua empresa e clicar em "Enviar arquivos", após alguns segundos,
+                    calculamos e devolvemos para você, o valor aproximado de restituição possível para sua empresa, essa
+                    análise é feita sobre todo Pis/COFINS pago durante o período de apuração de nossa aplicação. É
+                    seguro e não dilvulgamos seus dados não serão divulgados, são apenas para que possamos entrar em
+                    contato e conversarmos, caso tenha interesse, em realizar o processo de recuperação da sua empresa.
+                </p>
+                <p>Nossa empresa não cobra nenhum valor antecipado para recuperar os créditos de sua empresa</p>
+            </div>
+            <!-- <div class="resultado">
+                <p id="resultado">Total: {{resultado}}</p>
+            </div> -->
+            <p class="rodape">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugit mollitia eius quia
+                consectetur provident.</p>
+        </aside>
+        <aside class="right">
+            <div class="dados-e-calculos">
+                <form class="formulario" action="/results" method="post" enctype="multipart/form-data">
+                    <div>
+                        <input class="entrada" type="text" id="nome" name="nome" required placeholder="Nome" />
+                    </div>
+                    <div>
+                        <input class="entrada" type="email" id="email" name="email" required placeholder="Email" />
+                    </div>
+                    <div>
+                        <input class="entrada" type="tel" id="telefone" name="telefone" required
+                            placeholder="(xx) xxxxx-xxxx" />
+                    </div>
+                    <div class="selecionar">
+                        <div for="Estabelecimento">Estabelecimento:</div>
+                        <!-- <input type="radio" id="drogaria" name="estabelecimento" value="Drogaria" checked />
+                        <label for="drogaria">Drogaria</label><br>
+                        <input type="radio" id="autopecas" name="estabelecimento" value="Autopeças" />
+                        <label for="autopecas">Autopeças</label><br>
+                        <input type="radio" id="mercado" name="estabelecimento" value="Supermercado" />
+                        <label for="mercado">Mercado</label><br> -->
+                        <select class="estabelecimento" name="estabelecimento" id="estabelecimento">
+                            <option value="drogaria">Drogaria</option>
+                            <option value="autopecas">Autopeças</option>
+                            <option value="mercado">Mercado</option>
+                        </select>
+                    </div>
+                    <div class="arquivos-saida">
+                        <span>PGDAS para avaliação: </span>
+                        <br>
+                        <input type="file" name="image[]" multiple="multiple">
+                        <br>
+                        <input class="enviar" type="submit" value="Enviar arquivos">
+                    </div>
+                </form>
+                <div class="valores">
+                    <div class="titulo-resultado">Resultado</div>
+                    <div class="resultado">
+                        <div id="resultado">{{resultado}}</div>
+                    </div>
+                    <div class="ok">Pelos nossos cálculos, não existem valores significativos a segregar.</div>
+                    <!-- <div class="segregar"> Pelos nossos cálculos, sua empresa tem valores a segregar</div> -->
+                </div>
+            </div>
+
+            <!-- <img class="taxas" src="assets/5903.jpg" alt="imagem taxas"> -->
+            <!-- <img class="taxas" src="assets/taxas-opacidade-alterada.png" alt="imagem taxas"> -->
+        </aside>
+        <div class="imagem-aleatoria"> </div>
+        <!-- <img class="imagem-aleatoria" src="assets/vecteezy_close-up-of-a-handshake-between-two-professionals_1225069.jpg" alt="imagem aleatória da internet"> -->
+        <div class="fundo-esquerdo"></div>
+        <div class="fundo-direito"></div>
+        <div class="fundo"></div>
+        <!-- <img src="assets/notas_retornando.png" alt="notas retornando" class="notas"> -->
+    </main>
+    <!-- <img class="taxas" src="assets/taxas.jpg" alt="imagem taxas"> -->
+
+</body>
+
+</html>
