@@ -8,6 +8,7 @@
 
 p{
     text-indent: 20px;
+    text-align: justify;
 }
 
 .main{
@@ -66,6 +67,7 @@ p{
 
 .main .left .itens li{
     margin: 2px 0;
+    text-align: justify;
 }
 
 .main .dados-e-calculos{
