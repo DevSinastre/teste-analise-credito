@@ -89,6 +89,21 @@ p{
     /* background-color: black; */
 }
 
+.main .left .teste-container{
+    position: relative;
+    height: 18px;
+}
+
+.main .left .teste-container .teste{
+    position: absolute;
+    height: 200px;
+    opacity: 0;
+}
+
+.main .left .teste-container .teste:hover{
+    opacity: 1;
+}
+
 .main .dados-e-calculos{
     display: flex;
     flex-direction: column;
