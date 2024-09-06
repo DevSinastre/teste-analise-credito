@@ -67,9 +67,12 @@ p{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    position: relative;
+    height: 240px;
 }
 
 .main .left .itens li{
+    position: absolute;
     margin: 5px;
     text-align: justify;
     width: 120px;
@@ -83,25 +86,40 @@ p{
     box-shadow: 1px 1px 10px black;
 }
 
+.main .left .itens .primeiro{
+    left: 50px;
+    top: 5px;
+}
+
+.main .left .itens .segundo{
+    top: 5px;
+}
+
+.main .left .itens .terceiro{
+    right: 50px;
+    top: 5px;
+}
+
+.main .left .itens .quarto{
+    left: 50px;
+    bottom: 5px;
+}
+
+.main .left .itens .quinto{
+    bottom: 5px;
+}
+
+.main .left .itens .sexto{
+    bottom: 5px;
+    right: 50px;
+}
+
 .main .left .itens li:hover{
     width: 200px;
     height: 200px;
     /* background-color: black; */
-}
-
-.main .left .teste-container{
-    position: relative;
-    height: 18px;
-}
-
-.main .left .teste-container .teste{
-    position: absolute;
-    height: 200px;
-    opacity: 0;
-}
-
-.main .left .teste-container .teste:hover{
-    opacity: 1;
+    background-color: rgba(192, 181, 27);
+    z-index: 10;
 }
 
 .main .dados-e-calculos{
@@ -328,5 +346,100 @@ p{
         position: fixed;
         left: 0;
         top: 0;
+    }
+}
+
+@media (max-width: 590px){
+    .main .left .itens{
+        margin-left: 10px;
+        text-indent: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        position: relative;
+        justify-items: center;
+        height: 380px;
+    }
+    
+    .main .left .itens .primeiro{
+        left: 70px;
+        top: 5px;
+    }
+    
+    .main .left .itens .segundo{
+        top: 5px;
+        right: 70px;
+    }
+    
+    .main .left .itens .terceiro{
+        right: 70px;
+        top: 35%;
+    }
+    
+    .main .left .itens .quarto{
+        left: 70px;
+        top: 35%;
+    }
+    
+    .main .left .itens .quinto{
+        bottom: 5px;
+        left: 70px;
+    }
+    
+    .main .left .itens .sexto{
+        bottom: 5px;
+        right: 70px;
+    }
+}
+
+@media (max-width: 500px){    
+    .main .left .itens .primeiro{
+        left: 30px;
+    }
+    
+    .main .left .itens .segundo{
+        right: 30px;
+    }
+    
+    .main .left .itens .terceiro{
+        right: 30px;
+    }
+    
+    .main .left .itens .quarto{
+        left: 30px;
+    }
+    
+    .main .left .itens .quinto{
+        left: 30px;
+    }
+    
+    .main .left .itens .sexto{
+        right: 30px;
+    }
+}
+
+@media (max-width: 415px){    
+    .main .left .itens .primeiro{
+        left: 0;
+    }
+    
+    .main .left .itens .segundo{
+        right: 0;
+    }
+    
+    .main .left .itens .terceiro{
+        right: 0;
+    }
+    
+    .main .left .itens .quarto{
+        left: 0;
+    }
+    
+    .main .left .itens .quinto{
+        left: 0;
+    }
+    
+    .main .left .itens .sexto{
+        right: 0;
     }
 }
